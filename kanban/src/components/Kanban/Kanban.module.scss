@@ -1,0 +1,36 @@
+.kanban {
+  display: flex;
+  align-items: flex-start;
+  &_section {
+    width: 400px;
+    background: rgb(126, 87, 162);
+    background: linear-gradient(
+      90deg,
+      rgba(126, 87, 162, 1) 0%,
+      rgba(130, 108, 174, 1) 62%,
+      rgba(123, 66, 151, 1) 100%
+    );
+    padding: 10px;
+    border-radius: 10px;
+    & ~ & {
+      margin-left: 10px;
+    }
+    &_title {
+      color: antiquewhite;
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin: 10px 0 20px;
+    }
+    &_content {
+      & > * ~ * {
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+.card {
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px;
+}

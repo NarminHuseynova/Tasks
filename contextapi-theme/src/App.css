@@ -1,0 +1,54 @@
+.App {
+  font-family: "Ubuntu", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#light {
+  background-color: #f3ebf6;
+}
+
+#dark {
+  background-color: #000;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#light .text {
+  color: #000;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#dark .text {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.switch {
+  display: flex;
+  width: 100vw;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.switch label {
+  margin: 10px;
+}
+
+#light .switch label {
+  color: black;
+}
+
+#dark .switch label {
+  color: white;
+}
